@@ -1,9 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 
-import Spaceship from './components/Spaceship';
+import Spaceship from "./components/Spaceship";
 
 ReactDOM.render(
-  <Spaceship name="Millennium Falcon" />,
-  document.getElementById('global')
+  <Spaceship
+    name="Millennium Falcon"
+    speed="Ludicrous"
+    hasRockets={true}
+    colors={["Blue", "Green"]}
+  />,
+  document.getElementById("global")
 );
